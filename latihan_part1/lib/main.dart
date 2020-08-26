@@ -13,20 +13,6 @@ class _MyAppState extends State<MyApp> {
   Random valueRandom = Random();
   List<Widget> widgets = [];
 
-  // _MyAppState() {
-  //   for (int i = 0; i < 10; i++) {
-  //     widgets.add(Container(
-  //       margin: const EdgeInsets.only(left: 24.0, top: 24.0, right: 24.0),
-  //       width: 50.0 + valueRandom.nextInt(251),
-  //       height: 52.0,
-  //       decoration: BoxDecoration(
-  //           borderRadius: BorderRadius.circular(8.0),
-  //           color: Color.fromARGB(255, valueRandom.nextInt(256),
-  //               valueRandom.nextInt(256), valueRandom.nextInt(256))),
-  //     ));
-  //   }
-  // }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -41,8 +27,8 @@ class _MyAppState extends State<MyApp> {
             flexibleSpace: Container(
               decoration: BoxDecoration(
                   gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
                       colors: <Color>[
                     Color(0xFFFE7F49),
                     Color(0xFFFFCC48).withOpacity(.9)
@@ -135,7 +121,7 @@ class _MyAppState extends State<MyApp> {
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(8.0),
                                     color: Color.fromARGB(
-                                        255,
+                                        valueRandom.nextInt(256),
                                         valueRandom.nextInt(256),
                                         valueRandom.nextInt(256),
                                         valueRandom.nextInt(256))),
@@ -187,21 +173,31 @@ class _MyAppState extends State<MyApp> {
                   ],
                 ),
               ),
-              Container(
-                padding: const EdgeInsets.only(bottom: 24.0),
-                margin: const EdgeInsets.all(24.0),
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    boxShadow: [
-                      BoxShadow(
-                          color: Colors.black.withOpacity(.1),
-                          blurRadius: 50,
-                          offset: Offset(0, 0))
-                    ],
-                    borderRadius: BorderRadius.circular(12.0)),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: widgets,
+              GestureDetector(
+                onTap: () {
+                  setState(() {});
+                },
+                child: AnimatedContainer(
+                  duration: Duration(milliseconds: 400),
+                  padding: const EdgeInsets.only(bottom: 24.0),
+                  margin: const EdgeInsets.all(24.0),
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                            color: Color.fromRGBO(
+                                valueRandom.nextInt(256),
+                                valueRandom.nextInt(256),
+                                valueRandom.nextInt(256),
+                                .9),
+                            blurRadius: 60,
+                            offset: Offset(0, 0))
+                      ],
+                      borderRadius: BorderRadius.circular(12.0)),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: widgets,
+                  ),
                 ),
               )
             ],
