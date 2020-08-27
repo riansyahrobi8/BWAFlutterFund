@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:latihan_part1/screens/Body.dart';
+import 'package:latihan_part1/utils/CustomColor.dart' as myColor;
 
 class MyApp extends StatefulWidget {
   @override
@@ -24,12 +25,12 @@ class _MyAppState extends State<MyApp> {
                       begin: Alignment.centerLeft,
                       end: Alignment.centerRight,
                       colors: <Color>[
-                    Color(0xFFFE7F49),
-                    Color(0xFFFFCC48).withOpacity(.9)
+                    myColor.appBarColor1,
+                    myColor.appBarColor2.withOpacity(.9)
                   ])),
             ),
           ),
-          backgroundColor: Color(0xFFFAFAFA),
+          backgroundColor: myColor.bodyColor,
           body: Body()),
     );
   }

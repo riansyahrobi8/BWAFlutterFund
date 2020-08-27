@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CustomButton extends StatelessWidget {
   final String text;
   final Icon icon;
-  final int color1, color2;
+  final Color color1, color2;
   final double opacity;
 
   CustomButton(
@@ -20,11 +20,11 @@ class CustomButton extends StatelessWidget {
       height: 44.0,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8.0),
-          boxShadow: [BoxShadow(color: Color(color1), blurRadius: 25)],
-          gradient: LinearGradient(colors: <Color>[
-            Color(color1),
-            Color(color2).withOpacity(opacity)
-          ], begin: Alignment.centerLeft, end: Alignment.centerRight)),
+          boxShadow: [BoxShadow(color: color1, blurRadius: 25)],
+          gradient: LinearGradient(
+              colors: <Color>[color1, color2.withOpacity(opacity)],
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

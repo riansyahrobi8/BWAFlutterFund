@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:latihan_part1/widgets/CustomButton.dart';
 import 'package:latihan_part1/widgets/CustomText.dart';
+import 'package:latihan_part1/utils/CustomColor.dart' as myColor;
 
 class Body extends StatefulWidget {
   @override
@@ -57,8 +58,8 @@ class _BodyState extends State<Body> {
                         Icons.delete,
                         color: Colors.white,
                       ),
-                      color1: 0xFFFF7D7D,
-                      color2: 0xFFFF7D7D,
+                      color1: myColor.delButtonColor,
+                      color2: myColor.delButtonColor,
                       opacity: .68,
                     ),
                   ),
@@ -74,8 +75,8 @@ class _BodyState extends State<Body> {
                         Icons.add,
                         color: Colors.white,
                       ),
-                      color1: 0xFF74F45F,
-                      color2: 0xFF74F45F,
+                      color1: myColor.addButtonColor,
+                      color2: myColor.addButtonColor,
                       opacity: .68,
                     ),
                   ),
