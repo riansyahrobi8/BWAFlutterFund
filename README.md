@@ -1,6 +1,6 @@
 # BWA Flutter Fundamental
 
-![BWA Flutter Fundamental](https://github.com/riansyahrobi8/BWAFluuterFund/blob/master/latihan_part1/images/Screenshot_20200828_001532.png)
+![BWA Flutter Fundamental](https://github.com/riansyahrobi8/BWAFluuterFund/blob/master/images/Screenshot_20200828_001532.png)
 
 > Keep Self Learning
 
