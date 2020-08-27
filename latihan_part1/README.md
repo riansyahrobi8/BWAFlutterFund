@@ -15,5 +15,5 @@ Pada latihan pertama ini saya mencoba melakukan improvisai dengan menggabungkan 
 
 ### Berikut adalah screenshot aplikasinya
 
-![](https://github.com/riansyahrobi8/BWAFluuterFund/tree/master/images/Screenshot_2020-08-27-12-20-38-45.png)
+![Screenshot App](https://github.com/riansyahrobi8/BWAFluuterFund/blob/master/images/Screenshot_2020-08-27-12-20-38-45.png)
 
