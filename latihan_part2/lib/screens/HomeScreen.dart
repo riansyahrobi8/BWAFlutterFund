@@ -49,7 +49,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () {
                     Navigator.of(context)
                         .push(MaterialPageRoute(builder: (context) {
-                      return DetailScreen();
+                      return DetailScreen(
+                        name: places[index]['name'],
+                        account: places[index]['account'],
+                        image: places[index]['image'],
+                        placeName: places[index]['place_name'],
+                      );
                     }));
                   },
                   child: Card(

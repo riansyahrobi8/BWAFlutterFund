@@ -1,65 +1,56 @@
 [
     {
-        "id": 1,
         "name": "Ali Yahya",
         "account": "@ayahya09",
         "image": "login_image.jpg",
-        "photo_by": "Bandung, Indonesia"
+        "place_name": "Bandung, Indonesia"
     },
     {
-        "id": 2,
         "name": "Silas Baisch",
         "account": "@silasbaisch",
         "image": "gambar2.jpg",
-        "photo_by": "Jl. Raya Tegallalang, Tegallalang, Kabupaten Gianyar, Bali 80561, Indonesia"
+        "place_name": "Jl. Raya Tegallalang, Tegallalang, Kabupaten Gianyar, Bali 80561, Indonesia"
     },
     {
-        "id": 3,
         "name": "Oliver Sjöström",
         "account": "@ollivves",
         "image": "gambar3.jpg",
-        "photo_by": "Aling-Aling Waterfall, Indonesia"
+        "place_name": "Aling-Aling Waterfall, Indonesia"
     },
     {
-        "id": 4,
         "name": "Iswanto Arif",
         "account": "@iswanto",
         "image": "gambar4.jpg",
-        "photo_by": "Waterfall"
+        "place_name": "Waterfall"
     },
     {
-        "id": 5,
         "name": "Sangga Rima Roman Selia",
         "account": "@sxy_selia",
         "image": "gambar5.jpg",
-        "photo_by": "Aceh, Indonesia"
+        "place_name": "Aceh, Indonesia"
     },
     {
-        "id": 6,
         "name": "Víctor Vázquez",
         "account": "@nestencil",
         "image": "gambar6.jpg",
-        "photo_by": "Prambanan Temple, Indonesia"
+        "place_name": "Prambanan Temple, Indonesia"
     },
     {
-        "id": 7,
         "name": "Marvin Meyer",
         "account": "@marvelous",
         "image": "gambar7.jpg",
-        "photo_by": "Ubud, Indonesia"
+        "place_name": "Ubud, Indonesia"
     },
     {
-        "id": 8,
         "name": "Justin Kauffman",
         "account": "@ustindkauffman",
         "image": "gambar8.jpg",
-        "photo_by": "Bali, Indonesia"
+        "place_name": "Bali, Indonesia"
     },
     {
-        "id": 9,
         "name": "Setyaki Irham",
         "account": "@setyaki",
         "image": "gambar9.jpg",
-        "photo_by": "Bromo, Area Gunung Bromo, Podokoyo, Pasuruan, Jawa Timur, Indonesia"
+        "place_name": "Bromo, Area Gunung Bromo, Podokoyo, Pasuruan, Jawa Timur, Indonesia"
     }
 ]
