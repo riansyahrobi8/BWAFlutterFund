@@ -47,16 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: ListView(
         children: [
-          Container(
-            child: ListView.builder(
-                shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (BuildContext context, int index) => Container(
-                      width: 100.0,
-                      height: 100.0,
-                      color: Colors.amber,
-                    )),
-          ),
+          _buildHorizontalListView(),
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 16.0),
             child: Text(
@@ -109,4 +100,26 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
+}
+
+Widget _buildHorizontalListView() {
+  return Padding(
+      padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 32.0),
+      child: Container(
+        height:
+            120.0, // jadi tinggi cangkangnya harus didefnisikan terlebih dahulu
+        child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: 5,
+            itemBuilder: (BuildContext context, int index) => Container(
+                  width: 220.0,
+                  margin: const EdgeInsets.only(right: 16.0),
+                  child: ClipRRect(
+                      borderRadius: BorderRadius.circular(12.0),
+                      child: Image(
+                        image: AssetImage("images/4251990.jpg"),
+                        fit: BoxFit.cover,
+                      )),
+                )),
+      ));
 }
