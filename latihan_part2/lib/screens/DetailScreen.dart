@@ -13,7 +13,10 @@ class DetailScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: myColor.mainColor,
-          title: Text("Detail"),
+          title: Text(
+            "Detail",
+            style: TextStyle(fontFamily: "Roboto", fontSize: 17.0),
+          ),
         ),
         body: Stack(
           children: [
@@ -46,7 +49,7 @@ class DetailScreen extends StatelessWidget {
                   style: TextStyle(
                       color: myColor.titleColor,
                       fontFamily: "Oswald",
-                      fontSize: 20.0),
+                      fontSize: 18.0),
                 ),
               ),
             ),
@@ -68,18 +71,35 @@ class DetailScreen extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
+                            Center(
+                              child: Container(
+                                margin: const EdgeInsets.only(bottom: 24.0),
+                                width: 130.0,
+                                height: 7.0,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(100.0),
+                                    color: myColor.mainColor),
+                              ),
+                            ),
                             Text(
                               "Photo by $name on Unsplash.com",
                               style: TextStyle(
                                   fontFamily: "Roboto",
-                                  color: myColor.mainColor),
+                                  color: myColor.mainColor,
+                                  fontSize: 14.0),
                             ),
                             SizedBox(
                               height: 12.0,
                             ),
-                            Text(account)
+                            Text(
+                              account,
+                              style: TextStyle(
+                                  color: myColor.subTitleColor,
+                                  fontFamily: "Roboto",
+                                  fontSize: 12.0),
+                            )
                           ],
                         ),
                       ),
