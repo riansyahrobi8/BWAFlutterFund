@@ -11,7 +11,7 @@ Pada latihan pertama ini saya mencoba melakukan improvisai dengan menggabungkan 
 - [X] Anonymous Method
 - [X] TextStyle Widget
 - [X] List dan ListView Widget
-- [X] AnimatedConatiner Widget
+- [X] AnimatedContainer Widget
 
 ### Berikut adalah screenshot aplikasinya
 
